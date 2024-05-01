@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{032DBFB1-3F82-4AE3-B1E2-26B843210B26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Registration_and_Login_UI</RootNamespace>
+    <AssemblyName>Registration and Login UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="account_DETAILScs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account_DETAILScs.Designer.cs">
+      <DependentUpon>account_DETAILScs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard.Designer.cs">
+      <DependentUpon>Admin Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Album.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Album.Designer.cs">
+      <DependentUpon>Album.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Artist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artist.Designer.cs">
+      <DependentUpon>Artist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Music_Store_DB_Connect.cs" />
+    <Compile Include="PlayList_Creation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayList_Creation.Designer.cs">
+      <DependentUpon>PlayList_Creation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review.Designer.cs">
+      <DependentUpon>Review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriptionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subscriptionform.Designer.cs">
+      <DependentUpon>Subscriptionform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unsubscribed_user_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unsubscribed_user_view.Designer.cs">
+      <DependentUpon>Unsubscribed_user_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_sub_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_sub_user.Designer.cs">
+      <DependentUpon>Update_sub_user.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="account_DETAILScs.resx">
+      <DependentUpon>account_DETAILScs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard.resx">
+      <DependentUpon>Admin Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Album.resx">
+      <DependentUpon>Album.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artist.resx">
+      <DependentUpon>Artist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayList_Creation.resx">
+      <DependentUpon>PlayList_Creation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Review.resx">
+      <DependentUpon>Review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscriptionform.resx">
+      <DependentUpon>Subscriptionform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unsubscribed_user_view.resx">
+      <DependentUpon>Unsubscribed_user_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_sub_user.resx">
+      <DependentUpon>Update_sub_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawel-czerwinski-NTYYL9Eb9y8-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nardo-3574678.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spotify-piano-and-headphones-psvd4nwl5u4foka8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spotify.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Album cover 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default_imagine_prompt_Long_emerald_and_neon_green_lines_undul_0_2d415d14-03f7-44e7-9e00-3418941ba1ef_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subscribe_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pop cover image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Liked songs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gym playlist image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lofi playlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music-album.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music-album1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music-album2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Album music icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Album cover 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Album cover 12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5494929.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e6eeb963-02db-4fcf-ac14-4d556fac5739.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettyimages-1437814880.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spotify Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20 Famous Animated Logo Designs - Inspirational Showcase.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accountbtn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accountbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accountbtn-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric pattern 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric pattern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric image 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric image best.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric pattern3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric pattern 21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headphones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric image best1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20 Famous Animated Logo Designs - Inspirational Showcase1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric image 41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric image best2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geometric pattern1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Giga Chad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettyimages-14378148801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e6eeb963-02db-4fcf-ac14-4d556fac57391.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music_playergif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kendrick lamar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eminem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black coffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Weekndjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bryson Tiller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maroon 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kendrick-Lamar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soundwaves.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue waves 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default_A_captivating_cyberpunk_cityscape_at_night_adorned_wit_1_3ea18a20-e6a0-4c2d-a209-7f2fee07096e_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anonymous GIF - ANONYMOUS - Discover &amp; Share GIFs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leonardo_Diffusion_digital_art_black_bright_neon_green_music_n_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uncle waffles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gym Mode IPhone Wallpaper - IPhone Wallpapers1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="drake_started_from_the_bottom_explicit_mp3_63578.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="emcimbini_live_mp3_67342.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Eminem - Not Afraid.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="the_weeknd_blinding_lights_lyrics_mp3_67498.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
